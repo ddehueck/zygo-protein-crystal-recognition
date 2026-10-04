@@ -1,0 +1,23 @@
+[project]
+name = "zygo-protein-crystal-recognition"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "kagglehub>=1.0.2",
+    "pillow>=12.3.0",
+    "pyarrow>=25.0.1",
+    "pydantic>=2.13.5",
+    "tfrecord>=1.14.6",
+    "timm>=1.0.30",
+    "torch>=2.14.0",
+    "torchvision>=0.29.0",
+    "zygo",
+]
+
+[tool.zygo.local]
+data_dir = "zygo_results"
+
+[tool.uv.sources]
+zygo = { path = "../../github-repositories/zygo/packages/py-zygo", editable = true }
